@@ -74,7 +74,7 @@ Se desejar testar todas as imagens dentro de uma pasta (`test_images/`), basta m
 ```python
 import os
 
-test_images_dir = "test_images/"
+test_images_dir = "/assets/test_images/"
 for image_name in os.listdir(test_images_dir):
     test_image_path = os.path.join(test_images_dir, image_name)
     img = keras.utils.load_img(test_image_path, target_size=(225, 225))
